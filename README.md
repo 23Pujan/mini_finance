@@ -194,6 +194,18 @@ A big thank you to **@[Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-
 
 #Git #GitHub #CloudAdvisory #DevOps #Learning #VersionControl  
 
+---
+### Footer Dynamic Date Snippet
+ <p class="MiniFin-text">Mini Finance v1.0 — Deployed on: <span style="color:red;" id="date"></span> — By Pujan Bhattarai</p>
+ <script>
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+
+    const formattedDate = today.toLocaleDateString(undefined, options);
+
+    document.getElementById("date").textContent = formattedDate;
+</script>
+
 ---  
 
 ### **📢 Why Should You Post on LinkedIn?**  

@@ -579,7 +579,6 @@ Bootstrap 5 Dashboard Admin Template
                     </div>
 
                     <footer class="site-footer">
-                        <p>Mini Finance v1.0 — Deployed on 4/9/2025 — By Pujan Bhattarai</p>
                         <div class="container">
                             <div class="row">
                                 
@@ -587,9 +586,17 @@ Bootstrap 5 Dashboard Admin Template
                                     <p class="copyright-text">Copyright © Mini Finance 2048 
                                     - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
                                 </div>
-
+                                <p class="MiniFin-text">Mini Finance v1.0 — Deployed on: <span style="color:red;" id="date"></span> — By Pujan Bhattarai</p>
                             </div>
                         </div>
+                        <script>
+                            const today = new Date();
+                            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+
+                            const formattedDate = today.toLocaleDateString(undefined, options);
+
+                            document.getElementById("date").textContent = formattedDate;
+                        </script>
                     </footer>
                 </main>
 
